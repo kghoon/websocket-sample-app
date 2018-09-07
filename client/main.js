@@ -23,10 +23,10 @@ function flushTextInput () {
 
 function webSocketProtocol () {
     if (window.location.protocol == 'https:') {
-        return 'wss';
+        return 'wss:';
     }
     else {
-        return 'ws';
+        return 'ws:';
     }
 }
 
