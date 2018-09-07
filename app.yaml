@@ -1,0 +1,76 @@
+runtime: nodejs
+env: flex
+service: signal
+
+#runtime: custom
+#env: flex
+#service: signal-container
+
+
+#network:
+#  instance_tag: TAG_NAME
+#  name: NETWORK_NAME
+#  subnetwork_name: SUBNETWORK_NAME
+#  forwarded_ports:
+#    - PORT
+#    - HOST_PORT:CONTAINER_PORT
+#    - PORT/tcp
+#    - HOST_PORT:CONTAINER_PORT/udp
+
+#resource:
+#  cpu: 2
+#  memory_gb: 2.3
+#  disk_size_gb: 10
+#  volumes:
+#  - name: ramdisk1
+#    volume_type: tmpfs
+#    size_gb: 0.5
+
+#
+# Health checks
+#
+# There're two types of health checks that you can use:
+# * Legacy health checks are enabled by default and generally available.
+# * Updated health checks are in beta, need to enable explicitly
+#
+
+#health_check:
+#  enable_health_check: True
+#  check_interval_sec: 5
+#  timeout_sec: 4
+#  unhealthy_threshold: 2
+#  healthy_threshold: 2
+#  restart_threshold: 300
+
+#liveness_check:
+#  path: '/liveness_check'
+#  check_interval: 30
+#  timeout_sec: 4
+#  failure_threshold: 2
+#  success_threshold: 2
+
+#readiness_check:
+#  path: 'readiness_check'
+#  check_interval_sec: 5
+#  timeout_sec: 4
+#  failure_threshold: 2
+#  success_threshold: 2
+#  app_start_timeout: 300
+
+
+#
+# Service scaling settings
+#
+# automatic scaling is selected by default.
+#
+
+#automatic_scaling:
+#  min_num_instances: 5
+#  max_num_instances: 20
+#  cool_down_period_sec: 120
+#  cpu_utilization:
+#    target_utilization: 0.5
+
+#manual_scaling:
+#  instances: 5
+
