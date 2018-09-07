@@ -22,7 +22,7 @@ function flushTextInput () {
 }
 
 function webSocketProtocol () {
-    if (window.location.protocol == 'https') {
+    if (window.location.protocol == 'https:') {
         return 'wss';
     }
     else {
@@ -40,7 +40,7 @@ openBtn.onclick = function (e) {
         }
     }
 
-    ws = new WebSocket(webSocketProtocol() + "://" + window.location.host);
+    ws = new WebSocket(webSocketProtocol() + "//" + window.location.host);
     ws.onopen = function () {
         stateText.innerText = "OPEN";
     };
